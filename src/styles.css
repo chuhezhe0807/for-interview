@@ -1,65 +1,38 @@
-@import url("https://rsms.me/inter/inter.css");
+@import url('https://rsms.me/inter/inter.css');
+
+* {
+  box-sizing: border-box;
+}
 
 html,
-body {
+body,
+#root {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
-  background: #272730;
-  overflow: hidden;
 }
 
 body {
-  font-family: "Inter var", sans-serif;
-  font-size: 14px;
-  color: white;
-  background: #111116;
-  /* background: #f0f0f0; */
+  background: #f0f0f0;
+  color: black;
+  font-family: 'Inter';
 }
 
-#root {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+a {
+  color: black;
+}
+
+a {
+  pointer-events: all;
+  color: black;
+  text-decoration: none;
+}
+
+svg {
+  fill: black;
 }
 
 canvas {
-  position: absolute;
-}
-
-.content {
-  padding-top: 10px;
-  transform: translate3d(calc(50% + 40px), 0, 0);
-  text-align: left;
-  background: #202035;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-}
-
-.content::before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: -40px;
-  height: 1px;
-  width: 40px;
-  background: black;
-}
-
-.switch-button {
-  background-color: #dd5c18;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  font-weight: bolder;
-  pointer-events: all;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-  box-shadow: inset 0 0 0 0.09px black;
-
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 15px 30px;
+  touch-action: none;
 }
